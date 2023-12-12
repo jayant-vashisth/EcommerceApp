@@ -4,6 +4,9 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import styles from './home.style'
 import { Ionicons, Fontisto } from '@expo/vector-icons'
 import Welcome from '../components/home/Welcome'
+import Carousel from '../components/home/Carousel'
+import Headings from '../components/home/Headings'
+import ProductsRow from '../components/products/ProductsRow'
 
 
 
@@ -32,6 +35,9 @@ export default function Home() {
       </View>
       <ScrollView>
         <Welcome />
+        <Carousel />
+        <Headings/>
+        <ProductsRow/>
       </ScrollView>
     </SafeAreaView>
   )

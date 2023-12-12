@@ -3,10 +3,12 @@ import React from 'react'
 import styles from './welcome.style'
 import { COLORS, SIZES } from '../../constants'
 import { Feather, Ionicons } from '@expo/vector-icons'
-
+import { useNavigation } from '@react-navigation/native'
 
 
 export default function Welcome() {
+  const navigation = useNavigation()
+
   return (
     <View>
       <View style={styles.container}>
@@ -26,6 +28,7 @@ export default function Welcome() {
             name={"search"}
             size={24}
             style={styles.searchIcon}
+            onPressIn={() => { navigation.navigate("Search") }}
           />
         </TouchableOpacity>
 
@@ -34,7 +37,7 @@ export default function Welcome() {
             value=''
             style={styles.searchInput}
             placeholder='What are you looking for'
-            onPressIn={() => { }}
+            onPressIn={() => { navigation.navigate("Search") }}
           />
         </View>
 
