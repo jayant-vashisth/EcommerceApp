@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between"
   },
   headerTitle: {
-    fontFamily: "Semibold",
+    fontFamily: "semibold",
     fontSize: SIZES.xLarge - 2
   }
 })
